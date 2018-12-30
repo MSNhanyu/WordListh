@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/apk/res-auto"
+    package="com.example.yiwei.wordlist.cn.edu.bistu.cs.se.words">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".WordsApplication"
+        android:allowBackup="true"
+        android:label="Words Note"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Words Note"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WordDetailActivity"
+            android:label="详细内容" />
+        <activity
+            android:name=".MainActivity3"
+            android:label="词典" />
+        <activity
+            android:name=".MainActivity4"
+            android:label="词典" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="网页查找" />
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.example.yiwei.wordlist.cn.edu.bistu.cs.se.words.MyContentProvider"
+            android:enabled="true"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>
